@@ -1,0 +1,23 @@
+{
+    "manifest_version": 2,
+    "name": "PsionBackground",
+    "description": "Custom background for google.com",
+    "version": "1.0",
+    "icons":{
+        "16": "/images/icons8-crown-64.png",
+        "48":"/images/icons8-crown-60.png",
+        "128": "/images/icons8-rolex-50.png"
+    },
+    "page_action":{
+        "default_icon":{
+            "16": "/images/icons8-crown-64.png",
+            "48":"/images/icons8-crown-60.png",
+            "128": "/images/icons8-rolex-50.png"
+        }
+    },
+    "content_scripts":[{
+        "matches":["https://www.google.com/*"],
+        "css":["main.css"]
+    }]
+    
+}
