@@ -10,12 +10,13 @@ import RegisterPage from "./pages/RegisterPage/RegisterPage";
 import AddProductPage from "./pages/AddProductPage/AddProductPage";
 
 
+
 // Util Imports
 import PrivateRoute from "./utils/PrivateRoute";
 
 // containers
 import {Blog, Features, Footer, Header, Possibility, Whatbox } from './containers';
-import { CTA, Brand, Navbar} from './components';
+import { CTA, Brand, Navbar} from './containers';
 
 
 function App() {
@@ -45,6 +46,7 @@ function App() {
         <Route path="/register" element={<RegisterPage />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/addproduct" element={<PrivateRoute><AddProductPage/></PrivateRoute>} />
+        <route path="/price-table" element={<PrivateRoute><price-table/></PrivateRoute>} />
       </Routes>
       <Footer />
     </div>
