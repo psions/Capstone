@@ -1,4 +1,5 @@
 // General Imports
+import React from 'react';
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
 
@@ -8,17 +9,30 @@ import LoginPage from "./pages/LoginPage/LoginPage";
 import RegisterPage from "./pages/RegisterPage/RegisterPage";
 import AddProductPage from "./pages/AddProductPage/AddProductPage";
 
-// Component Imports
-import Navbar from "./components/NavBar/NavBar";
-import Footer from "./components/Footer/Footer";
 
 // Util Imports
 import PrivateRoute from "./utils/PrivateRoute";
 
+// containers
+import {Blog, Features, Footer, Header, Possibility, Whatbox } from './containers';
+import { CTA, Brand, Navbar} from './components';
+
+
 function App() {
   return (
     <div>
-      <Navbar />
+      <div className= "App">
+      <div className="gradient__bg">
+        <Navbar />
+        <Header />
+      </div>
+      <Brand />
+      <Whatbox />
+      <Features />
+      <Possibility />
+      <CTA />
+      <Blog />
+    </div>
       <Routes>
         <Route
           path="/"
@@ -38,3 +52,13 @@ function App() {
 }
 
 export default App;
+
+
+
+
+
+
+
+
+
+
