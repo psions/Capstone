@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useContext } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import AuthContext from "../../context/AuthContext";
@@ -8,7 +8,18 @@ import "./Navbar.css";
 
 // BEM -> Block Element Modifier
 
+const Menu = () => (
+  <>
+  <p><a href="#home">Home</a></p>
+  <p><a href="#wislb">What is a Loot Box</a></p>
+  <p><a href="#possibility">Different Loot Boxes</a></p>
+  <p><a href="#features">items</a></p>
+  <p><a href="#blog">Library</a></p>
+  </>
+)
+
 const Navbar = () => {
+  const [toggleMenu, setToggleMenu ] = useState(false);
   const { logoutUser, user } = useContext(AuthContext);
   const navigate = useNavigate();
   return (
@@ -19,11 +30,28 @@ const Navbar = () => {
         </div>
         <div className="gpt3__navbar-links_container">
           <p><a href="#home">Home</a></p>
-          <p><a href="#wislb">What is a LootBox</a></p>
-          <p><a href="#possibility">Different LootBoxes</a></p>
+          <p><a href="#wislb">What is a Loot Box</a></p>
+          <p><a href="#possibility">Different Loot Boxes</a></p>
           <p><a href="#features">items</a></p>
           <p><a href="#blog">Library</a></p>
         </div>
+      </div>
+        <div className="gpt3__navbar-sign">
+          <p>Sign in</p>
+          <button type="button">Sign up</button>
+      </div>
+      <div className="gpt3__navbar-menu">
+        {toggleMenu
+          ? <RiCloseLine color="#ffff" size={27} onClick={() => setToggleMenu(false)}/>
+          : <RiMenu3Line color="#ffff" size={27} onClick={() => setToggleMenu(true)}/>
+        }
+        {toggleMenu && (
+          <div className="gpt2__navbar-menu_container scale-up-center">
+            <div className="gpt3__navbar-menu_container-links">
+
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );
