@@ -15,8 +15,25 @@ import AddProductPage from "./pages/AddProductPage/AddProductPage";
 import PrivateRoute from "./utils/PrivateRoute";
 
 // containers
-import {Blog, Features, Footer, Header, Possibility, Whatbox } from './containers';
+import {Blog, Features, Footer, Header, Possibility, Whatbox,  } from './containers';
 import { CTA, Brand, Navbar} from './containers';
+
+
+// possibly bring in later //
+   {/* <Routes>
+        <Route
+          path="/"
+          element={
+            <PrivateRoute>
+              <HomePage />
+            </PrivateRoute>
+          }
+        />
+        <Route path="/register" element={<RegisterPage />} />
+        <Route path="/login" element={<LoginPage />} />
+        <Route path="/addproduct" element={<PrivateRoute><AddProductPage/></PrivateRoute>} />
+        <Route path="/price-table" element={<PrivateRoute><price-table/></PrivateRoute>} />
+      </Routes> */}
 
 
 function App() {
@@ -33,22 +50,10 @@ function App() {
       <Possibility />
       <CTA />
       <Blog />
-    </div>
-      <Routes>
-        <Route
-          path="/"
-          element={
-            <PrivateRoute>
-              <HomePage />
-            </PrivateRoute>
-          }
-        />
-        <Route path="/register" element={<RegisterPage />} />
-        <Route path="/login" element={<LoginPage />} />
-        <Route path="/addproduct" element={<PrivateRoute><AddProductPage/></PrivateRoute>} />
-        <route path="/price-table" element={<PrivateRoute><price-table/></PrivateRoute>} />
-      </Routes>
       <Footer />
+    </div>
+   
+      
     </div>
   );
 }
