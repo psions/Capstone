@@ -11,7 +11,7 @@ import "./Navbar.css";
 const Menu = () => (
   <>
   <p><a href="#home">Home</a></p>
-  <p><a href="#wislb">What is a Loot Box</a></p>
+  <p><a href="#wialb">What is a Loot Box</a></p>
   <p><a href="#possibility">Different Loot Boxes</a></p>
   <p><a href="#features">items</a></p>
   <p><a href="#blog">Library</a></p>

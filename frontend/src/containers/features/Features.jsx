@@ -26,7 +26,7 @@ const featuresData = [
 const Features = () => {
   return (
     <div className='gpt3__features section__padding' id="features">
-      <div className='gpt3__features-header'>
+      <div className='gpt3__features-heading'>
         <h1 className='gradient__text'>Your Future Gaming Experience Starts Today</h1>
         <p>Request Different Loot Boxes Now</p>
       </div>
