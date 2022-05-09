@@ -5,13 +5,14 @@ import gpt3Logo from '../../assets/logo.svg'
 const Footer = () => {
   return (
     <div className="gpt3__footer section__padding">
+      {/* <hr style="border-color:red" /> */}
       <div className="gpt3__footer-heading">
         <h1 className="gradient__text">Do You Want To Be Ahead Of The Game</h1>
       </div>
 
       <div className="gpt3__footer-btn">
         <p>Request Early Access</p>
-      </div>
+      </div>                                               
 
       <div className="gpt3__footer-links">
         <div className="gpt3__footer-links_logo">
