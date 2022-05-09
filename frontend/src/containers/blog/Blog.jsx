@@ -13,8 +13,6 @@ const Blog = () => {
         <div className='gpt3__blog-container_groupA'>
           <Article imgUrl={blog01} date="may 4th, 2022" title="The healthy human mind doesn't wake up in the morning thinking this is its last day on Earth."/>
         </div>
-      </div>
-      <div className='gpt3__blog-container'>
         <div className='gpt3__blog-container_groupB'>
           <Article imgUrl={blog02} date="may 4th, 2022" title="The healthy human mind doesn't wake up in the morning thinking this is its last day on Earth."/>
           <Article imgUrl={blog03} date="may 4th, 2022" title="The healthy human mind doesn't wake up in the morning thinking this is its last day on Earth."/>

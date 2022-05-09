@@ -5,6 +5,7 @@
     display: flex;
     flex-direction: column;
     background: var(--color-footer);
+    /* max-width: max-content; */
 }
 
 .gpt3__blog-container_article-image {
