@@ -38,23 +38,24 @@ import { CTA, Brand, Navbar} from './containers';
 
 function App() {
   return (
-    <div>
-      <div className= "App">
-      <div className="gradient__bg">
-        <Navbar />
-        <Header />
+    
+      <div>
+        <div className= "App">
+        <div className="gradient__bg">
+          <Navbar />
+          <Header />
+        </div>
+        <Brand />
+        <Whatbox />
+        <Features />
+        <Possibility />
+        <CTA />
+        <Blog />
+        <Footer />
       </div>
-      <Brand />
-      <Whatbox />
-      <Features />
-      <Possibility />
-      <CTA />
-      <Blog />
-      <Footer />
-    </div>
-   
       
     </div>
+    
   );
 }
 
