@@ -4,7 +4,7 @@ import gpt3Logo from '../../assets/logo.svg'
 
 const Footer = () => {
   return (
-    <div className="gpt3__footer section__padding">
+    <div className="gpt3__footer section__padding" id="footer">
       {/* <hr style="border-color:red" /> */}
       <div className="gpt3__footer-heading">
         <h1 className="gradient__text">Do You Want To Be Ahead Of The Game</h1>
@@ -16,7 +16,7 @@ const Footer = () => {
 
       <div className="gpt3__footer-links">
         <div className="gpt3__footer-links_logo">
-          <img src={gpt3Logo} alt="logo" />
+          {/* <img src={gpt3Logo} alt="logo" /> */}
           <p>All Rights Reserved For Gamers</p>
         </div>
         <div className="gpt3__footer-links_div">
