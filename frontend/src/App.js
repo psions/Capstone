@@ -1,6 +1,6 @@
 // General Imports
 import React from 'react';
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
 import "./App.css";
 
 // Pages Imports
@@ -20,25 +20,24 @@ import { CTA, Brand, Navbar} from './containers';
 
 
 // possibly bring in later //
-   {/* <Routes>
-        <Route
-          path="/"
-          element={
-            <PrivateRoute>
-              <HomePage />
-            </PrivateRoute>
-          }
-        />
-        <Route path="/register" element={<RegisterPage />} />
-        <Route path="/login" element={<LoginPage />} />
-        <Route path="/addproduct" element={<PrivateRoute><AddProductPage/></PrivateRoute>} />
-        <Route path="/price-table" element={<PrivateRoute><price-table/></PrivateRoute>} />
-      </Routes> */}
+  //  {* <Routes>
+  //       <Route
+  //         path="/"
+  //         element={
+  //           <PrivateRoute>
+  //             <HomePage />
+  //           </PrivateRoute>
+  //         }
+  //       />
+  //       <Route path="/register" element={<RegisterPage />} />
+  //       <Route path="/login" element={<LoginPage />} />
+  //       <Route path="/addproduct" element={<PrivateRoute><AddProductPage/></PrivateRoute>} />
+  //       <Route path="/price-table" element={<PrivateRoute><price-table/></PrivateRoute>} />
+  //     </Routes> }
 
 
 function App() {
   return (
-    
       <div>
         <div className= "App">
         <div className="gradient__bg">
@@ -52,8 +51,7 @@ function App() {
         <CTA />
         <Blog />
         <Footer />
-      </div>
-      
+      </div>     
     </div>
     
   );

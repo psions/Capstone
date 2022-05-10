@@ -24,14 +24,14 @@ body {
   background: transparent;
   padding: 34px;
   border-radius: 6px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 10px 10px 10px 20px  rgba(255, 255, 255, 0.2);
 }
 
 .wrapper h2{
   position: relative;
   font-size: 22px;
   font-weight: 600;
-  color: black;
+  color: white;
 }
 
 .wrapper h2::before{
