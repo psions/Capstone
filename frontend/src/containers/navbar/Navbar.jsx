@@ -5,6 +5,7 @@ import AuthContext from "../../context/AuthContext";
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
 import logo from "../../assets/logo.svg"
 import "./Navbar.css";
+import Signup from "../../pages/SignUpPage/Signup";
 
 
 // BEM -> Block Element Modifier
@@ -23,6 +24,7 @@ const Navbar = () => {
   const [toggleMenu, setToggleMenu ] = useState(false);
   const { logoutUser, user } = useContext(AuthContext);
   const navigate = useNavigate();
+  
   return (
     <div className="gpt3__navbar">
       <div className="gpt3__navbar-links">
@@ -35,7 +37,7 @@ const Navbar = () => {
       </div>
       <div className="gpt3__navbar-sign">
         <p>Sign in</p>
-        <button type="button" Link="/SignUpPage">Sign up</button>
+        <button type="button" Link="/register" onClick={<Signup />}>Sign up</button>
       </div>
       <div className="gpt3__navbar-menu">
         {toggleMenu
@@ -48,7 +50,7 @@ const Navbar = () => {
               <Menu />
               <div className="gpt3__navbar-menu_container-links-sign">
                 <p>Sign in</p>
-                <button type="button" Link="/SignUpPage">Sign up</button>
+                <button type="button" Link="/register" onClick={<Signup />}>Sign up</button>
               </div>
             </div>
           </div>

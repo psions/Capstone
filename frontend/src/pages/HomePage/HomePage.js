@@ -3,16 +3,6 @@ import React from 'react';
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import "../../App.css";
 
-// Pages Imports
-
-// import paymentpage from "./pages/PaymentPage"
-
-
-
-
-// Util Imports
-
-
 // containers
 import {Blog, Features, Footer, Header, Possibility, Whatbox,  } from '../../containers';
 import { CTA, Brand, Navbar} from '../../containers';

@@ -3,7 +3,7 @@ import "./styles.css"
 
 const Signup=() =>{
     return(
-<div class="wrapper">
+<div class="wrapper e">
     <h2>Registration</h2>
     <form action="#">
         <div class="input-box">

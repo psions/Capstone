@@ -4,9 +4,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
 
-body {
+/* .example {
   background-image: url("./offline.jpg");
   background-size: cover;
   display: flex;
@@ -15,11 +16,11 @@ body {
   height: 100vh;
   width: 100vw;
   font-family: "Raleway", sans-serif;
-}
+} */
 
 .wrapper{
-  position: relative;
-  max-width: 430px;
+  position: center;
+  max-width: 100%;
   width: 100%;
   background: transparent;
   padding: 34px;
@@ -53,6 +54,7 @@ body {
 .wrapper form .input-box{
   height: 52px;
   margin: 18px 0;
+  
 }
 
 form .input-box input{
