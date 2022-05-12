@@ -1,8 +1,10 @@
 import React from "react";
 import "./Footer.css";
 import gpt3Logo from '../../assets/logo.svg'
+import { useNavigate, Link } from "react-router-dom";
 
 const Footer = () => {
+  const navigate = useNavigate();
   return (
     <div className="gpt3__footer section__padding" id="footer">
       {/* <hr style="border-color:red" /> */}
@@ -11,7 +13,7 @@ const Footer = () => {
       </div>
 
       <div className="gpt3__footer-btn">
-        <p>Request Early Access</p>
+        <p onClick={()=> navigate("/register")}>Request Early Access</p>
       </div>                                               
 
       <div className="gpt3__footer-links">

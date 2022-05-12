@@ -36,8 +36,8 @@ const Navbar = () => {
         </div>
       </div>
       <div className="gpt3__navbar-sign">
-        <p>Sign in</p>
-        <button type="button" Link="/register" onClick={<Signup />}>Sign up</button>
+        <p onClick={() => navigate("/login")}>Sign in</p>
+        <button onClick={() => navigate("/register")}>Sign up</button>
       </div>
       <div className="gpt3__navbar-menu">
         {toggleMenu
@@ -50,7 +50,7 @@ const Navbar = () => {
               <Menu />
               <div className="gpt3__navbar-menu_container-links-sign">
                 <p>Sign in</p>
-                <button type="button" Link="/register" onClick={<Signup />}>Sign up</button>
+                <button onClick={() => navigate("/register")}>Sign up</button>
               </div>
             </div>
           </div>

@@ -26,6 +26,7 @@ import {
 import { CTA, Brand, Navbar } from "./containers";
 import Pricing from "./pages/Pricing/Pricing";
 import Signup from "./pages/SignUpPage/Signup";
+import Payment from "./pages/PaymentPage/Payment";
 
 // possibly bring in later //
 
@@ -35,6 +36,7 @@ function App() {
       <Route path="/" element={<HomePage />} />
       <Route path="/register" element={<Signup />} />
       <Route path="/login" element={<LoginPage />} />
+      <Route path="/payment" element={<Payment />} />
       <Route
         path="/addproduct"
         element={

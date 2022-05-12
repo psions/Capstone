@@ -1,8 +1,10 @@
 import React from 'react';
 import Feature from '../feature/Feature';
 import './whatbox.css';
+import { useNavigate, Link } from "react-router-dom";
 
 const Whatbox = () => {
+  const navigate = useNavigate();
   return (
     <div className='gpt3__whatbox section_margin' id='wialb'>
       <div className='gpt3__whatbox-feature'>
@@ -10,7 +12,7 @@ const Whatbox = () => {
       </div>
       <div className='gpt3__whatbox-heading'>
         <h1 className='gradient__text'>Everything you want just one click away</h1>
-        <p>Explore The Crates</p>
+        <p onClick={() => navigate("/pricing")}>Explore The Crates</p>
       </div>
       <div className='gpt3__whatbox-container'>
         <Feature title="Consoles" text="Available on Xbox Series X.  Sony PlayStation 5.  Nintendo Switch OLED.  Chromecast with Google TV. Xbox: Microsoft Xbox Series S. Nintendo Switch Lite. Apple TV 4K"/>

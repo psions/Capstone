@@ -1,7 +1,9 @@
 import React from 'react';
 import "./styles.css"
+import { useNavigate, Link } from "react-router-dom";
 
 const Signup=() =>{
+    const navigate = useNavigate();
     return(
 <div class="wrapper e">
     <h2>Registration</h2>
@@ -26,7 +28,7 @@ const Signup=() =>{
             <input type="submit" value="Register Now Noob"/>
         </div>
         <div class="text">
-            <h3>Already have an account? <a href="#">Login now</a></h3>
+            <h3>Already have an account? <a href="#" onClick={() => navigate("/login")}>Login now</a></h3>
         </div>
     </form>
 </div>
