@@ -1,11 +1,8 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pricing Table</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+import React from "react";
+import './style.css'
+const Pricing =()=>{
+
+return(
 
 <div class="container">
     <h2>Choose your Box</h2>
@@ -51,6 +48,6 @@
         </div>
     </div>
 </div>
-
-</body>
-</html>
+)
+}
+export default Pricing;

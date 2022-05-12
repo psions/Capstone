@@ -6,6 +6,7 @@ import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
 import logo from "../../assets/logo.svg"
 import "./Navbar.css";
 
+
 // BEM -> Block Element Modifier
 
 const Menu = () => (
