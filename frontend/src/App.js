@@ -8,6 +8,9 @@ import HomePage from "./pages/HomePage/HomePage";
 import LoginPage from "./pages/LoginPage/LoginPage";
 import RegisterPage from "./pages/RegisterPage/RegisterPage";
 import AddProductPage from "./pages/AddProductPage/AddProductPage";
+// import SignUpPage from "./pages/SignUpPage";
+// import pricetable from "./pages/pricetable";
+// import paymentpage from "./pages/PaymentPage"
 
 
 
@@ -20,20 +23,21 @@ import { CTA, Brand, Navbar} from './containers';
 
 
 // possibly bring in later //
-  //  {* <Routes>
-  //       <Route
-  //         path="/"
-  //         element={
-  //           <PrivateRoute>
-  //             <HomePage />
-  //           </PrivateRoute>
-  //         }
-  //       />
-  //       <Route path="/register" element={<RegisterPage />} />
-  //       <Route path="/login" element={<LoginPage />} />
-  //       <Route path="/addproduct" element={<PrivateRoute><AddProductPage/></PrivateRoute>} />
-  //       <Route path="/price-table" element={<PrivateRoute><price-table/></PrivateRoute>} />
-  //     </Routes> }
+{ <Routes>
+    <Route
+      path="/"
+      element={
+        <PrivateRoute>
+          <HomePage />
+        </PrivateRoute>
+      }
+    />
+    <Route path="/register" element={<RegisterPage />} />
+    <Route path="/login" element={<LoginPage />} />
+    <Route path="/addproduct" element={<PrivateRoute><AddProductPage/></PrivateRoute>} />
+    <Route path="/price-table" element={<PrivateRoute><price-table/></PrivateRoute>} />
+  </Routes> 
+}
 
 
 function App() {
