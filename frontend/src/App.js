@@ -27,8 +27,9 @@ import { CTA, Brand, Navbar } from "./containers";
 import Pricing from "./pages/Pricing/Pricing";
 import Signup from "./pages/SignUpPage/Signup";
 import Payment from "./pages/PaymentPage/Payment";
+import Survey from "./pages/SurveyPage/Survey";
 
-// possibly bring in later //
+
 
 function App() {
   return (
@@ -37,6 +38,7 @@ function App() {
       <Route path="/register" element={<Signup />} />
       <Route path="/login" element={<LoginPage />} />
       <Route path="/payment" element={<Payment />} />
+      <Route path="/survey" element={<Survey/>} />
       <Route
         path="/addproduct"
         element={

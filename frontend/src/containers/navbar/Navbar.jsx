@@ -17,6 +17,7 @@ const Menu = () => (
   <p><a href="#possibility">Different Loot Boxes</a></p>
   <p><a href="#features">items</a></p>
   <p><a href="#blog">Library</a></p>
+  <p><a href="survey">Survey</a></p>
   </>
 )
 

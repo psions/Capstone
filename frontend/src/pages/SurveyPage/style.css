@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header{
+    padding: 0 40px 20px 40px;
+    color: rgb(3, 12, 90);
+}
+
+.container{
+    border: 2px solid grey;
+    padding: 40px;
+    background-color: #151515e0 ;
+}
+
+#title{
+    text-align: center;
+    font-size: 35px;
+    border-bottom: 3px solid rgb(253, 49, 49);
+}
+
+#description{
+    margin: 0 20px 0 30px;
+    font-size: 17px;
+    color: #000000;
+}
+
+#btn{
+    width: 500px;
+    padding: 10px;
+    cursor: pointer;
+    margin: 20px;
+    border: 0px;
+    border-radius: 2px;
+    background-color: rgb(253, 49, 49);
+    color: white;
+    font-size: 20px;
+}
+
+#btn:hover{
+    background: rgba(255, 0, 0, 0.534)
+}
+
+#comments, #name, #email-label, #number-label{
+    padding: 9px;
+    width: 500px;
+    font-size: 17px;
+}
+
+#dropdown{
+    padding: 10px;
+    font-size: 15px;
+    margin: 6px;
+    cursor: pointer;
+}
+
